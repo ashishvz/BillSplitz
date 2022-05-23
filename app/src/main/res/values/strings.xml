@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BillSplitz</string>
+    <string name="rupee_symbol">₹</string>
+</resources>
