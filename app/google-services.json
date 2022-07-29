@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "369721179578",
+    "project_id": "billsplit-7931a",
+    "storage_bucket": "billsplit-7931a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:369721179578:android:90dbae9b557e87652ff183",
+        "android_client_info": {
+          "package_name": "com.ashishvz.billsplitz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "369721179578-1ckfi682ia86eoijfb17asuokudprn8b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashishvz.billsplitz",
+            "certificate_hash": "07f97fed4c8a5e55a40b495b330e4eef51d1afa5"
+          }
+        },
+        {
+          "client_id": "369721179578-p2fn38nlq2ftn675tipv7ng4s2tcjja0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ashishvz.billsplitz",
+            "certificate_hash": "395eea6a12c43d2acf7685fc16cffb1db8c12888"
+          }
+        },
+        {
+          "client_id": "369721179578-raeqc1hfilkgn1a8b8ngcudjmu7blgo3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADrxNKSJAC_TVqejk2z6DUkev-kkEwsG8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "369721179578-raeqc1hfilkgn1a8b8ngcudjmu7blgo3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -43,7 +43,7 @@ public class ExpenseAdapter extends RecyclerView.Adapter<ExpenseAdapter.ViewHold
         return expenses.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         private final MaterialTextView shoppingText, amountText;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

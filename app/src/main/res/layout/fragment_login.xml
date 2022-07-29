@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey">
+
+    <ImageView
+        android:id="@+id/loginImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/login_image" />
+
+    <ImageView
+        android:id="@+id/smsImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/loginImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/sms" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/verifyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/smsImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Verify with your phone number"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/smsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyText"
+        android:layout_centerHorizontal="true"
+        android:text="SMS will be sent your phone number"
+        android:textSize="16sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumberInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/smsText"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:startIconDrawable="@drawable/phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:maxLength="10"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/otpInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/smsText"
+        android:layout_margin="15dp"
+        android:layout_marginTop="15dp"
+        app:boxCornerRadiusBottomEnd="8dp"
+        app:boxCornerRadiusBottomStart="8dp"
+        app:boxCornerRadiusTopEnd="8dp"
+        app:boxCornerRadiusTopStart="8dp"
+        app:startIconDrawable="@drawable/otp"
+        android:visibility="invisible">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/otpEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="One Time Password (OTP)"
+            android:inputType="number"
+            android:maxLength="6"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyPhoneNumberButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/phoneNumberInputLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:text="Get OTP"
+        app:backgroundTint="@color/purple_500"
+        app:cornerRadius="8dp" />
+
+</RelativeLayout>

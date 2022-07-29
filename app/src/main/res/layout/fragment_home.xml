@@ -30,11 +30,12 @@
         </com.google.android.material.card.MaterialCardView>
 
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/greetingText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="25dp"
-            android:text="Hi Ashish"
+            android:text="Hi"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
@@ -99,6 +100,15 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="5dp" />
 
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/chartNoDataFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="No Data found"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
         </RelativeLayout>
     </com.google.android.material.card.MaterialCardView>
 
@@ -113,12 +123,29 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/expenseRecycler"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_below="@id/recentText"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp" />
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expenseRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/recentTransactionNoDataFound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No recent transactions found"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
 </RelativeLayout>

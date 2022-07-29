@@ -6,5 +6,11 @@
         <item>Household</item>
         <item>EMIs</item>
         <item>Groceries</item>
+        <item>Fuel</item>
+        <item>Travel</item>
+        <item>Family care/ Eduction</item>
+        <item>Medical</item>
+        <item>Emergency</item>
+        <item>Others</item>
     </string-array>
 </resources>
