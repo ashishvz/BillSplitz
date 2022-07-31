@@ -60,6 +60,7 @@ public class LoginFragment extends Fragment {
     public void onStart() {
         super.onStart();
         mAuth = FirebaseAuth.getInstance();
+        mAuth.getFirebaseAuthSettings().forceRecaptchaFlowForTesting(true);
         if (mAuth.getCurrentUser() != null) {
             navController.navigate(R.id.action_loginFragment_to_homeFragment);
         }

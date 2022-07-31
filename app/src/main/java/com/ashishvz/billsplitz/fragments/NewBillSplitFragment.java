@@ -126,7 +126,7 @@ public class NewBillSplitFragment extends Fragment{
                 for (Contact con : selectedContact) {
                     if (con.isSelected) {
                         selectedSize = selectedSize + 1;
-                        contactData.put(Long.parseLong(con.getPhoneNumber().replace("-", "")), false);
+                        contactData.put(Long.parseLong(con.getPhoneNumber().replace("-", "").replace("(", "").replace(")", "")), false);
                     }
                 }
                 if (selectedSize > 0) {
